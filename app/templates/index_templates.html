@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+
+
+{% block title %} Email Slicer{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <br>
+                <br>
+                <br>
+                <h1 class="text-white">Email Slicer</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table-responsive">
+                <table class="table">
+                    <form action="/" method="POST">
+                        <div class="form-group">
+                            <div class="fst-italic">
+                                <div class="text-white">
+                                    <label>Enter your email id with @ and domain name</label>
+                                </div>
+                            </div>
+                           
+                            <input class="form-control" type="text" name="email" placeholder="xyz@yahoo.com">
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Slice</button>
+                        </div>
+                    </form>
+                    <br>
+                    <form>
+                        <tr>
+                            <th scope="row"></th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="text-white">User-name :</p>
+                            </th>
+
+                            <td></td>
+                            <td class="text-white">{{ email }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="text-white">Domain :</p>
+                            </th>
+
+                            <td></td>
+                            <td class="text-white">{{ domain }}</td>
+                            <td></td>
+                        </tr>
+                    </form>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="fst-italic">
+                    <footer class="text-white"> Made by AbuZayDin</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
