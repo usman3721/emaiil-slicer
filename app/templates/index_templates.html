@@ -25,7 +25,7 @@
                                     <label>Enter your email id with @ and domain name</label>
                                 </div>
                             </div>
-                           
+
                             <input class="form-control" type="text" name="email" placeholder="xyz@yahoo.com">
                         </div>
                         <br>
@@ -37,30 +37,14 @@
                     </form>
                     <br>
                     <form>
-                        <tr>
-                            <th scope="row"></th>
-                            <td> </td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <p class="text-white">User-name :</p>
-                            </th>
+                       
+                        <p class="text-white"> Email user-name : {{ email }} </p>
+                        <hr class="text-white" height:3px size="1">
+                        
+                        <p class="text-white">Domain name: {{ domain }} </p>
+                        <hr class="text-white" height:3px size="1">
 
-                            <td></td>
-                            <td class="text-white">{{ email }}</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <p class="text-white">Domain :</p>
-                            </th>
-
-                            <td></td>
-                            <td class="text-white">{{ domain }}</td>
-                            <td></td>
-                        </tr>
+                        <p class="text-white"> Error: {{ Error }} </p>
                     </form>
                 </table>
                 <br>
@@ -74,10 +58,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
+
                 <div class="fst-italic">
                     <footer class="text-white"> Made by AbuZayDin</footer>
                 </div>
