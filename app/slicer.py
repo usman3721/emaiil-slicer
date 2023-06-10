@@ -1,6 +1,6 @@
 
 # # importing Flask and other modules
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,redirect
 
 
 # # Flask constructor
@@ -23,6 +23,8 @@ def email_slicer():
             error = ""
 
         else:
+            
             error = "Wrong Input ! ! !"
+        
 
     return render_template("index_templates.html", email=email1, domain=domain, Error=error)
